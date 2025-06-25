@@ -3,7 +3,7 @@ function solution(players, m, k) {
   const server = new Array(24).fill(0);
 
   for (let i = 0; i < 24; i++) {
-    const required = Math.ceil(players[i] / m);
+    const required = Math.floor(players[i] / m);
     const current = server[i];
     const need = required - current;
 
